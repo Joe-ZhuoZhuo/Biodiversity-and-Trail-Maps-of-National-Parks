@@ -1,8 +1,1 @@
-# JS_proj_team11
-
-Flask app
-_______________________________________________
-
-1. Start the app by python app.py
-
-2. retrieve the endpoints in json by state with 
+![Parks-Pic1](https://user-images.githubusercontent.com/49292265/63629433-2411c000-c5e0-11e9-8efb-2edd24d53add.jpg)
