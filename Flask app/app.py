@@ -18,7 +18,6 @@ parks_json = serges_func()
 
 @app.route("/")
 def index():
-    """Return the homepage."""
     return render_template("index.html")
 
 @app.route("/roger")
