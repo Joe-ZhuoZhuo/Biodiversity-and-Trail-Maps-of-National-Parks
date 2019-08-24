@@ -1,5 +1,5 @@
 // Store our API endpoint inside queryUrl
-var queryUrl = " ";
+var queryUrl = "/parks";
 
 // Perform a GET request to the query URL
 d3.json(queryUrl, function(data) {
