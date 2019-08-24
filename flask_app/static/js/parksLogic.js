@@ -90,8 +90,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var parks = {};
 console.log("About to run D3.json")
 
-// This code below does not work even though it did before august 24, 2016.
-// Why? Black Magic.
+// This code below does not work even though it did before August 24, 2016 13:00(1:00PM).
 
 // d3.json('/parks', function(data) {
 // 	parks = data;
@@ -104,34 +103,27 @@ console.log("About to run D3.json")
 
 //To make it work, we had to split the d3.json and the .then into two parts.
 //Just as Abraham split the goat into two to sacrifice for God.
-//Now it works.
-//It's ugly. But it works.
+//Now it works. It's ugly. But it works.
 
 // And yes, we tried this too:
 
-  // console.log("Attempting new connection")
   // var request = new XMLHttpRequest()
-  // console.log("Created Request Object")
-  // console.log(request)
   // // Open a new connection, using the GET request on the URL endpoint
   // request.open('GET', '/parks', true)
-
-  // console.log("Request.open called")
-  // console.log(request)
-
   // request.onload = function (parks) {
   //   console.log(parks)
-
   // };
 
+//Call d3.json on the parks to get the API
 d3_call = d3.json('/parks');
 
+//See giant comment blog above for explanation.
 setTimeout(function(){
-    console.log("Sleep done!")
-
     d3_call.then(function(parks){
+    	//Loop through all the parks and get their geo-coordinates
   		for (var i = 0; i < parks.length; i++) {
 		    var location = [parks[i].latitude, parks[i].longitude]
+		    //Create markers on map based on the coordinates
 		    L.marker(location).addTo(map);
   }
     })
