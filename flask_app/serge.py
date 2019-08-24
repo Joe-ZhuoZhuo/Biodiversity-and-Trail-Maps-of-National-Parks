@@ -23,11 +23,10 @@ def serges_func():
 	check_missing_data_rows
 	
 	parks_json = df_pr.to_json(orient='records')
-	#in case we'll need to make this return other things in the future
-	# species_json = df_pr.to_json(orient='records')
-	#we will be able to just do 
-	#return parks_json, species_json
-	return parks_json
+	species_json = df_pr.to_json(orient='records')
+
+	return {"parks":parks_json,"species":species_json}
+
 
 #====================================================
 	# #SQL Stuff, not used currently
