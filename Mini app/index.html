@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Species Tree</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
+
+  </head>
+
+  <body>
+
+    <p>
+      <input type="button" value="Select Park to populate with Species" id="bt" />
+    </p>
+    
+    <select id="sel">
+      <option value="">-- Select --</option>
+    </select>
+    
+    <p id="msg"></p>
+    </body>
+    
+    <script>
+      $(document).ready(function () {
+        $('#bt').click(function () {
+
+          var url = "https://www.encodedna.com/library/sample.json";
+
+          $.getJSON(url, function (data) {
+            $.each(data, function (index, value) {
+              // APPEND OR INSERT DATA TO SELECT ELEMENT.
+              d3.select('#sel')
+              .append('<option value="' + value.ID + '">' + value.Name + '</option>');
+            });
+          });
+        });
+
+        // SHOW SELECTED VALUE.
+        $('#sel').change(function () {
+          $('#msg').text('Selected Item: ' + this.options[this.selectedIndex].text);
+        });
+      });
+    </script>
+
+      <header>
+        <button onclick="click(tree)">Expand All</button>
+        <button onclick="">Collapse All</button>
+      </header>
+  
+    <!-- The div where we will inject our map -->
+    <div id="map"></div>
+    <div id="chart"></div>
+  
+    <!-- d3 JavaScript -->
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    
+    <!-- Leaflet-Choropleth JavaScript -->
+    <!-- <script type="text/javascript" src="static/js/choropleth.js"></script> -->
+    
+    
+    <!-- Our logic JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+    
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+
+    <!-- Leaflet CSS & JS-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin="" /> -->
+    <!-- <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+          integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+          crossorigin=""></script> -->
+  
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </body>
+
+</html>
