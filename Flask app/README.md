@@ -2,7 +2,7 @@
 ![Park_Pic3](https://user-images.githubusercontent.com/49292265/63629708-c1212880-c5e1-11e9-838b-4b2472cbbbb1.jpg)
 
 
-Joe Zhuo
-Ming Lei
-Roger Lefort
+Joe Zhuo,
+Ming Lei,
+Roger Lefort,
 Serge Guilao
