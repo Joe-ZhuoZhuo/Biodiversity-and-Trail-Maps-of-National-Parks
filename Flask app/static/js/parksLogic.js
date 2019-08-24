@@ -103,6 +103,9 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var parks = {};
 console.log("About to run D3.json")
 
+// This code below does not work even though it did before august 24, 2016.
+// Why? Black Magic.
+
 // d3.json('/parks', function(data) {
 // 	parks = data;
 	// for (var i = 0; i < parks.length; i++) {
@@ -111,6 +114,11 @@ console.log("About to run D3.json")
  //    L.marker(location).addTo(myMap);
  //  }
 // });
+
+//To make it work, we had to split the d3.json and the .then into two parts.
+//Just as Abraham split the goat into two to sacrifice for God.
+//Now it works.
+//It's ugly. But it works.
 
 d3_call = d3.json('/parks');
 
@@ -124,9 +132,3 @@ setTimeout(function(){
   }
     })
 }, 500);
-
-
-// console.log("Reached end of javascript")
-
-  
-
