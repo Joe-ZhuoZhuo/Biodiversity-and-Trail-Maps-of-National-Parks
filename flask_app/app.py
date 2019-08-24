@@ -19,13 +19,14 @@ jsons = serges_func()
 parks_json = jsons["parks"]
 species_json = jsons["species"]
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
-#+======UNCOMMENT THIS LATER FOR ROGER
-# @app.route("/roger")
-# def roger():
-#     return jsonify(rogers_dic)
+
+@app.route("/roger")
+def roger():
+    return jsonify(rogers_dic)
 
 @app.route("/parks")
 def parks():

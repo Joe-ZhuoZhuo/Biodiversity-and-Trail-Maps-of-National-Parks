@@ -84,20 +84,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
-  // console.log("Attempting new connection")
-  // var request = new XMLHttpRequest()
-  // console.log("Created Request Object")
-  // console.log(request)
-  // // Open a new connection, using the GET request on the URL endpoint
-  // request.open('GET', '/parks', true)
 
-  // console.log("Request.open called")
-  // console.log(request)
-
-  // request.onload = function (parks) {
-  //   console.log(parks)
-
-  // };
   
 
 var parks = {};
@@ -119,6 +106,23 @@ console.log("About to run D3.json")
 //Just as Abraham split the goat into two to sacrifice for God.
 //Now it works.
 //It's ugly. But it works.
+
+// And yes, we tried this too:
+
+  // console.log("Attempting new connection")
+  // var request = new XMLHttpRequest()
+  // console.log("Created Request Object")
+  // console.log(request)
+  // // Open a new connection, using the GET request on the URL endpoint
+  // request.open('GET', '/parks', true)
+
+  // console.log("Request.open called")
+  // console.log(request)
+
+  // request.onload = function (parks) {
+  //   console.log(parks)
+
+  // };
 
 d3_call = d3.json('/parks');
 

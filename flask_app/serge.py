@@ -23,7 +23,7 @@ def serges_func():
 	check_missing_data_rows
 	
 	parks_json = df_pr.to_json(orient='records')
-	species_json = df_pr.to_json(orient='records')
+	species_json = df_sp.to_json(orient='records')
 
 	return {"parks":parks_json,"species":species_json}
 
