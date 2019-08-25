@@ -32,14 +32,14 @@ root = Node('Flare')
 
 def return_json():
 
-    with open('reduced_species.csv', 'r') as f:
+    with open('resources/reduced_species.csv', 'r') as f:
         reader = csv.reader(f)
         next(reader)
         for row in reader:
             grp1, grp2, grp3, grp4, size = row
             root.child(grp1).child(grp2).child(grp3).child(grp4, size)
 
-    species_string = json.dumps(root.as_dict())
+    # species_string = json.dumps(root.as_dict())
     species_dict = root.as_dict()
     return species_dict
 
