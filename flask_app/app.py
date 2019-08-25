@@ -13,6 +13,10 @@ app = Flask(__name__)
 from Roger import rogers_func
 rogers_dic = rogers_func()
 
+# RL - The function below replaces Roger
+from python_to_parent_child_JSON import return_json
+species_data = return_json()
+
 
 from serge import serges_func
 jsons = serges_func()
@@ -24,9 +28,10 @@ species_json = jsons["species"]
 def index():
     return render_template("index.html")
 
-@app.route("/roger")
-def roger():
-    return jsonify(rogers_dic)
+# RL - This route is no longer needed
+# @app.route("/roger")
+# def roger():
+#     return jsonify(rogers_dic)
 
 @app.route("/parks")
 def parks():
@@ -34,7 +39,9 @@ def parks():
 
 @app.route("/species")
 def species():
-    return species_json
+    # RL - This is from python_to_parent_child_JSON
+    return jsonify(species_data)
+#     return species_json
 
 
 if __name__ == "__main__":
