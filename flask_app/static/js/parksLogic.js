@@ -133,19 +133,31 @@ setTimeout(function(){
 					shadowSize:   [25, 32], // size of the shadow
 					iconAnchor:   [11, 47], // point of the icon which will correspond to marker's location
 					shadowAnchor: [4, 62],  // the same for the shadow
-					popupAnchor:  [100, -900] // point from which the popup should open relative to the iconAnchor
+					popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
 				});
 		    //Create markers on map based on the coordinates
 		    marker = L.marker(location, {icon:greenIcon})
 		    marker.addTo(map);
 		    let park = parks[i]
 		    marker.on('mouseover', function(e) {
-			  var popup = L.popup()
+			  var popup = L.popup({ offset:[0,-20]})
 			   .setLatLng(e.latlng) 
-			   .setContent("<b>" + park.park_name + '</b><br/> Acres: ' + park.acres)
+			   .setContent("<b>" + park.park_name + '</b><br/> Acres: ' + park.acres +
+			   	'</b><br/> Latitude: ' + park.latitude + '</b><br/> Longitude: ' + park.longitude)
 			   .openOn(map);
 					});
-
   }
     })
 }, 500);
+
+
+//PLOTLY DATA
+var data = [
+  {
+    x: ['giraffes', 'orangutans', 'monkeys'],
+    y: [20, 14, 23],
+    type: 'bar'
+  }
+];
+
+Plotly.newPlot('chart', data);
