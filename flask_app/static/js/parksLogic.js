@@ -17,9 +17,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-			'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
-			: 'Hover over a state');
+		this._div.innerHTML = '<h4>US State Parks</h4>' +  
+		(props ? '<b>' + props.name : '');
 	};
 
 	info.addTo(map);
@@ -121,10 +120,32 @@ d3_call = d3.json('/parks');
 setTimeout(function(){
     d3_call.then(function(parks){
     	//Loop through all the parks and get their geo-coordinates
-  		for (var i = 0; i < parks.length; i++) {
+  		for (let i = 0; i < parks.length; i++) {
 		    var location = [parks[i].latitude, parks[i].longitude]
+
+		    //Make popup appear a bit higher 
+		    // var myIcon = L.divIcon({ popupAnchor: [0, -30] });
+				var greenIcon = L.icon({
+					iconUrl: 'static/leaf-green.png',
+					shadowUrl: 'static/leaf-shadow.png',
+
+					iconSize:     [19, 47], // size of the icon
+					shadowSize:   [25, 32], // size of the shadow
+					iconAnchor:   [11, 47], // point of the icon which will correspond to marker's location
+					shadowAnchor: [4, 62],  // the same for the shadow
+					popupAnchor:  [100, -900] // point from which the popup should open relative to the iconAnchor
+				});
 		    //Create markers on map based on the coordinates
-		    L.marker(location).addTo(map);
+		    marker = L.marker(location, {icon:greenIcon})
+		    marker.addTo(map);
+		    let park = parks[i]
+		    marker.on('mouseover', function(e) {
+			  var popup = L.popup()
+			   .setLatLng(e.latlng) 
+			   .setContent("<b>" + park.park_name + '</b><br/> Acres: ' + park.acres)
+			   .openOn(map);
+					});
+
   }
     })
 }, 500);
