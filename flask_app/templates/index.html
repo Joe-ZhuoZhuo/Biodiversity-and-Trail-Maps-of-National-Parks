@@ -26,64 +26,27 @@
 
 <body>
 
-  <div class="container my-4">
-  
-    <!-- Jumbotron -->
-    <div class="card card-image" style="background-image: url(https://media.timeout.com/images/102908703/1372/1029/image.jpg)">
-      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
-        <div class="py-5">
-  
-          <!-- Content -->
-          <h1 class="title-text" font size="7"> The National Parks of the United States</h1>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5" id='header-text'>The term biodiversity encompasses life at all its levels, from ecosystems to species to genes. To study biodiversity is
-          to study the complete web of life that makes Earth the only known planet upon which the human species can live.</p>
-          <a class="btn peach-gradient"><i class="fa fa-clone left"></i> Click on the map below for more information</a>
-  
-        </div>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-light bg-light">
-      <a href="index.html" class="navbar-right logo"><img src="../resources/images/US-NationalParkService-Logo.svg" style="width:5%"></a>
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Species Table</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              National Parks
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- When a state Park is selected it'll populate the tree -->
-              <a class="dropdown-item" href="#">Populate with park names</a> 
-            </div>
-          </li>
-        </ul>
-        
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-      </div>
-    </nav>
-  
+<span class="content_item non_wrapping">
+  <span class="page_heading">
+    <span>Drill down, and dig deep, with a table</span>
+  </span>
+</span>
+<div id="DirectEditPreserve" class="wow fadeInUp databaseTable_holder 122860">
+  <div id="DirectEditPreserve" class="databaseTable_heading">
+    <div id="DirectEditPreserve" class="databaseTable_title">Test Table</div>
+    <input id="DirectEditPreserve" class="databaseTable_search" type="text" width="200" placeholder="Search this table">
   </div>
-  <!-- The div where we will inject our map -->
-  <div id="map"></div>
-
-    <!-- The div where we will inject our tree -->
-    <div id="tree"></div>
+  <div id="DirectEditPreserve" class="databaseTable">
+    <div id="DirectEditPreserve" class="databaseTable_import_wrap" style="display: block;">
+    </div>
+    <div id="DirectEditPreserve" class="databaseTable_UI_scrollLeft databaseTable_UI_button" style="display: none;">
+      <!-- JS shows/hides by appending the .hidden class -->
+    </div>
+    <div id="DirectEditPreserve" class="databaseTable_UI_scrollRight databaseTable_UI_button" style="display: none;">
+      <!-- JS shows/hides by appending the .hidden class -->
+    </div>
+  </div>
+</div>
 
   <!-- API key -->
   <script type="text/javascript" src="static/js/config.js"></script>
