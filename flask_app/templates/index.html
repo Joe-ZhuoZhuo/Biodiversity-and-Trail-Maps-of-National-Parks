@@ -16,6 +16,9 @@
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>
 
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
   <!--D3 cdn-->
   <script src="https://d3js.org/d3.v5.js"></script>
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.11.0/d3.js"></script>-->
@@ -70,17 +73,13 @@
             </div>
           </li>
         </ul>
-        
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
       </div>
     </nav>
   
+    <div class="col-md-12" id="map"></div>
+    <div class="col-md-12" id="chart"></div>
   </div>
-  <!-- The div where we will inject our map -->
-  <div id="map"></div>
+
 
     <!-- The div where we will inject our tree -->
     <div id="tree"></div>
