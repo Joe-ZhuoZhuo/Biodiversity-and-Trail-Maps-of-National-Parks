@@ -28,6 +28,11 @@ cat_json = jsons["cat"]
 def index():
     return render_template("index.html")
 
+# Route for collapsible speciess tree
+@app.route("/tree")
+def build_tree():
+    return render_template("tree.html")
+
 # RL - This route is no longer needed
 # @app.route("/roger")
 # def roger():
