@@ -86,25 +86,43 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
       google.charts.load('current', {'packages':['bar']});
       google.charts.setOnLoadCallback(drawChart);
 
-//Declaring the function up here so that it's hoisted. I don't think this is necessary 
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-    ['Park Name', 'Mammals', 'Bugs', 'Peppers', 'Rogers'],
-    ['<b>Arcadia</b>', 1000, 400, 200, 222],
-    ['Columia', 1170, 460, 250, 222],
-    ['Paraguay', 660, 1120, 300,333],
-    ['Hati', 1030, 540, 350,333]
-  ]);
+//Ming: Declaring the function up here so that it's hoisted. I don't think this is necessary but my javascript is rusty. 
+function drawChart(cat) {
+	//Google chart uses this format to make their charts.
+	// var data = google.visualization.arrayToDataTable([
+  //   ['Park Name', 'Mammals', 'Bugs', 'Peppers', 'Rogers'],
+  //   ['<b>Arcadia</b>', 1000, 400, 200, 222]
+  // ]);
+
+	//Cat looks like: [ {park_name:"zzz", category:"Amphibian", category.1: "13"}, {...}]
+	//It's an array with 1 object for every category in the park.
+
+	let header_row = [];
+	let data_row = [];
+	let park_name = cat[0]["park_name"];
+	header_row[0] = park_name;
+	data_row[0] = "Different categories of species at " + park_name;
+	//Looping through park categories
+	for (let i = 0; i < cat.length; i++){
+		//The first column is just Park name and theRealParkName
+		//The rest are the categories so thats why we use this here.
+		header_row[i+1] = cat[i]["category"];
+		data_row[i+1] = cat[i]["category.1"];
+	}
+
+	var data = google.visualization.arrayToDataTable([
+    header_row, data_row ]);
+
 
   var options = {
     chart: {
       title: 'Animal Categories',
-      subtitle: 'The number of species per category in PARKNAME',
+      subtitle: 'The number of species per category in ' + park_name,
     },
     bars: 'vertical', // Required for Material Bar Charts.
     hAxis: {format: 'decimal'},
     height: 400, //MAKE THIS THE MAXIMUM NUMBER OF SPECIES FOR THE CHARTS 
-    colors: ['#1b9e77', '#d95f02', '#7570b3', 'yellow']
+    colors: ['#1b9e77', 'yellow', '#d95f02', 'teal', '#7570b3', '#eb5f9f','#0f4f17', '#99c7d2', '#1b9e77', 'yellow', '#d95f02', 'teal', '#7570b3', '#eb5f9f','#0f4f17', '#99c7d2']
   };
 
   var chart = new google.charts.Bar(document.getElementById('chart_div'));
@@ -112,6 +130,16 @@ function drawChart() {
   chart.draw(data, google.charts.Bar.convertOptions(options));
 
 }
+
+//Cats is an array of multiple objects with park names. We need to sort them into single array objects with the same park names. This is used below but placed up here for hoisting reasons 
+//check for source here 
+//https://gist.github.com/JamieMason/0566f8412af9fe6a1d470aa1e089a752
+const groupBy = key => array =>
+  array.reduce((objectsByKeyValue, obj) => {
+    const value = obj[key];
+    objectsByKeyValue[value] = (objectsByKeyValue[value] || []).concat(obj);
+    return objectsByKeyValue;
+  }, {});
 
 
 
@@ -145,25 +173,33 @@ console.log("About to run D3.json")
   // };
 
 //Call d3.json on the parks to get the API
-park_api_call = d3.json('/parks');
+park_api_call = d3.json('/all');
 
 
 
-//See giant comment blog above for explanation.
+//See giant comment blog above for explanation on why we do setTimeout.
 setTimeout(function(){
     park_api_call.then(function(data){
-    	//We have to do this because the API return as a string
-    	let parks = eval(data["parks"])
+    	//We do this because the API json within data is a string. It needs to be converted into an array.
+    	let parks = eval(data["parks"]);
+    	let cats = eval(data["cat"]);
 
-    	// let cats = eval(data["cat"])
+
+    	//See above for documentation on this
+    	groupByParkName = groupBy("park_name");
+    	cats = groupByParkName(cats)
+    	// groupBy function returns an object. Convert it into array
+    	cats = Object.values(cats)
+
+    	//DIGRESSION:
+    	//Just going to draw cats here real quick because otherwise the chart is blank when you load the page.
+    	drawChart(cats[0]);
+
     	//Loop through all the parks and get their geo-coordinates
   		for (let i = 0; i < parks.length; i++) {
-  			let park = parks[i]
-
+  			let park = parks[i];
+  			let cat = cats[i];
 		    let location = [park.latitude, park.longitude]
-
-		    //Make popup appear a bit higher 
-		    // var myIcon = L.divIcon({ popupAnchor: [0, -30] });
 				var greenIcon = L.icon({
 					iconUrl: 'static/leaf-green.png',
 					shadowUrl: 'static/leaf-shadow.png',
@@ -187,10 +223,13 @@ setTimeout(function(){
 					});
 		    //The thing that updates the chart
 		    marker.on('click', function(e) {
-		    	console.log("clicked")
-		    	console.log(e)
+		    	drawChart(cat)
 		    });
   }
     })
 }, 1500);
+
+
+
+
 

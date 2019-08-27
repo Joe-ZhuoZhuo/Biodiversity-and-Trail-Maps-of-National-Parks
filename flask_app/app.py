@@ -19,10 +19,9 @@ species_data = return_json()
 
 
 from serge import serges_func
-jsons = serges_func()
-parks_json = jsons["parks"]
-species_json = jsons["species"]
-cat_json = jsons["cat"]
+jsons_from_function = serges_func()
+parks_json = jsons_from_function["parks"]
+cat_json = jsons_from_function["cat"]
 
 @app.route("/")
 def index():
@@ -32,10 +31,13 @@ def index():
 # @app.route("/roger")
 # def roger():
 #     return jsonify(rogers_dic)
+@app.route("/all")
+def all_jsons():
+  	return jsonify(jsons_from_function)
 
 @app.route("/parks")
 def parks():
-  	return jsonify(jsons)
+  	return parks_json
 
 @app.route("/species")
 def species():

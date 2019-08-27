@@ -1,0 +1,550 @@
+park_name,category,category
+Acadia National Park,Amphibian,15
+Acadia National Park,Bird,364
+Acadia National Park,Fish,38
+Acadia National Park,Mammal,55
+Acadia National Park,Reptile,11
+Acadia National Park,Vascular Plant,1226
+Arches National Park,Amphibian,8
+Arches National Park,Bird,205
+Arches National Park,Fish,11
+Arches National Park,Mammal,59
+Arches National Park,Reptile,20
+Arches National Park,Vascular Plant,745
+Badlands National Park,Amphibian,10
+Badlands National Park,Bird,239
+Badlands National Park,Fish,24
+Badlands National Park,Fungi,173
+Badlands National Park,Insect,239
+Badlands National Park,Invertebrate,1
+Badlands National Park,Mammal,64
+Badlands National Park,Reptile,13
+Badlands National Park,Spider/Scorpion,1
+Badlands National Park,Vascular Plant,625
+Big Bend National Park,Amphibian,13
+Big Bend National Park,Bird,415
+Big Bend National Park,Fish,53
+Big Bend National Park,Mammal,89
+Big Bend National Park,Nonvascular Plant,48
+Big Bend National Park,Reptile,62
+Big Bend National Park,Vascular Plant,1589
+Biscayne National Park,Amphibian,8
+Biscayne National Park,Bird,233
+Biscayne National Park,Fish,818
+Biscayne National Park,Insect,11
+Biscayne National Park,Invertebrate,34
+Biscayne National Park,Mammal,28
+Biscayne National Park,Reptile,40
+Biscayne National Park,Vascular Plant,554
+Black Canyon of the Gunnison National Park,Amphibian,2
+Black Canyon of the Gunnison National Park,Bird,175
+Black Canyon of the Gunnison National Park,Fish,16
+Black Canyon of the Gunnison National Park,Mammal,67
+Black Canyon of the Gunnison National Park,Reptile,11
+Black Canyon of the Gunnison National Park,Vascular Plant,835
+Bryce Canyon National Park,Amphibian,4
+Bryce Canyon National Park,Bird,217
+Bryce Canyon National Park,Fish,1
+Bryce Canyon National Park,Mammal,76
+Bryce Canyon National Park,Reptile,13
+Bryce Canyon National Park,Vascular Plant,975
+Canyonlands National Park,Amphibian,7
+Canyonlands National Park,Bird,220
+Canyonlands National Park,Fish,33
+Canyonlands National Park,Mammal,76
+Canyonlands National Park,Reptile,22
+Canyonlands National Park,Vascular Plant,865
+Capitol Reef National Park,Amphibian,6
+Capitol Reef National Park,Bird,248
+Capitol Reef National Park,Fish,15
+Capitol Reef National Park,Mammal,73
+Capitol Reef National Park,Reptile,21
+Capitol Reef National Park,Vascular Plant,1203
+Carlsbad Caverns National Park,Amphibian,15
+Carlsbad Caverns National Park,Bird,367
+Carlsbad Caverns National Park,Fish,5
+Carlsbad Caverns National Park,Mammal,92
+Carlsbad Caverns National Park,Reptile,62
+Carlsbad Caverns National Park,Vascular Plant,995
+Channel Islands National Park,Algae,61
+Channel Islands National Park,Amphibian,4
+Channel Islands National Park,Bird,357
+Channel Islands National Park,Crab/Lobster/Shrimp,11
+Channel Islands National Park,Fish,273
+Channel Islands National Park,Insect,2
+Channel Islands National Park,Invertebrate,196
+Channel Islands National Park,Mammal,44
+Channel Islands National Park,Nonvascular Plant,68
+Channel Islands National Park,Reptile,11
+Channel Islands National Park,Slug/Snail,33
+Channel Islands National Park,Spider/Scorpion,1
+Channel Islands National Park,Vascular Plant,824
+Congaree National Park,Algae,74
+Congaree National Park,Amphibian,43
+Congaree National Park,Bird,200
+Congaree National Park,Crab/Lobster/Shrimp,6
+Congaree National Park,Fish,65
+Congaree National Park,Fungi,279
+Congaree National Park,Insect,617
+Congaree National Park,Invertebrate,15
+Congaree National Park,Mammal,39
+Congaree National Park,Nonvascular Plant,7
+Congaree National Park,Reptile,50
+Congaree National Park,Slug/Snail,21
+Congaree National Park,Spider/Scorpion,21
+Congaree National Park,Vascular Plant,884
+Crater Lake National Park,Algae,218
+Crater Lake National Park,Amphibian,20
+Crater Lake National Park,Bird,252
+Crater Lake National Park,Crab/Lobster/Shrimp,40
+Crater Lake National Park,Fish,13
+Crater Lake National Park,Fungi,192
+Crater Lake National Park,Insect,994
+Crater Lake National Park,Invertebrate,68
+Crater Lake National Park,Mammal,96
+Crater Lake National Park,Nonvascular Plant,193
+Crater Lake National Park,Reptile,20
+Crater Lake National Park,Slug/Snail,9
+Crater Lake National Park,Spider/Scorpion,17
+Crater Lake National Park,Vascular Plant,1628
+Cuyahoga Valley National Park,Amphibian,24
+Cuyahoga Valley National Park,Bird,246
+Cuyahoga Valley National Park,Crab/Lobster/Shrimp,8
+Cuyahoga Valley National Park,Fish,85
+Cuyahoga Valley National Park,Insect,227
+Cuyahoga Valley National Park,Invertebrate,25
+Cuyahoga Valley National Park,Mammal,47
+Cuyahoga Valley National Park,Reptile,23
+Cuyahoga Valley National Park,Slug/Snail,15
+Cuyahoga Valley National Park,Spider/Scorpion,2
+Cuyahoga Valley National Park,Vascular Plant,1239
+Death Valley National Park,Algae,60
+Death Valley National Park,Amphibian,71
+Death Valley National Park,Bird,531
+Death Valley National Park,Crab/Lobster/Shrimp,38
+Death Valley National Park,Fish,9
+Death Valley National Park,Fungi,123
+Death Valley National Park,Insect,903
+Death Valley National Park,Invertebrate,18
+Death Valley National Park,Mammal,212
+Death Valley National Park,Nonvascular Plant,22
+Death Valley National Park,Reptile,90
+Death Valley National Park,Slug/Snail,72
+Death Valley National Park,Spider/Scorpion,32
+Death Valley National Park,Vascular Plant,2258
+Denali National Park and Preserve,Amphibian,1
+Denali National Park and Preserve,Bird,179
+Denali National Park and Preserve,Fish,14
+Denali National Park and Preserve,Fungi,29
+Denali National Park and Preserve,Insect,51
+Denali National Park and Preserve,Invertebrate,3
+Denali National Park and Preserve,Mammal,43
+Denali National Park and Preserve,Nonvascular Plant,159
+Denali National Park and Preserve,Vascular Plant,841
+Dry Tortugas National Park,Bird,283
+Dry Tortugas National Park,Fish,281
+Dry Tortugas National Park,Invertebrate,42
+Dry Tortugas National Park,Mammal,6
+Dry Tortugas National Park,Reptile,5
+Dry Tortugas National Park,Vascular Plant,231
+Everglades National Park,Amphibian,17
+Everglades National Park,Bird,370
+Everglades National Park,Fish,426
+Everglades National Park,Mammal,42
+Everglades National Park,Reptile,61
+Everglades National Park,Vascular Plant,1168
+Gates Of The Arctic National Park and Preserve,Amphibian,1
+Gates Of The Arctic National Park and Preserve,Bird,134
+Gates Of The Arctic National Park and Preserve,Fish,17
+Gates Of The Arctic National Park and Preserve,Fungi,474
+Gates Of The Arctic National Park and Preserve,Mammal,39
+Gates Of The Arctic National Park and Preserve,Vascular Plant,688
+Glacier Bay National Park and Preserve,Algae,64
+Glacier Bay National Park and Preserve,Amphibian,5
+Glacier Bay National Park and Preserve,Bird,258
+Glacier Bay National Park and Preserve,Crab/Lobster/Shrimp,96
+Glacier Bay National Park and Preserve,Fish,359
+Glacier Bay National Park and Preserve,Fungi,2
+Glacier Bay National Park and Preserve,Insect,35
+Glacier Bay National Park and Preserve,Invertebrate,117
+Glacier Bay National Park and Preserve,Mammal,58
+Glacier Bay National Park and Preserve,Nonvascular Plant,98
+Glacier Bay National Park and Preserve,Reptile,3
+Glacier Bay National Park and Preserve,Slug/Snail,37
+Glacier Bay National Park and Preserve,Spider/Scorpion,3
+Glacier Bay National Park and Preserve,Vascular Plant,822
+Glacier National Park,Algae,2
+Glacier National Park,Amphibian,6
+Glacier National Park,Bird,277
+Glacier National Park,Crab/Lobster/Shrimp,6
+Glacier National Park,Fish,27
+Glacier National Park,Fungi,276
+Glacier National Park,Insect,197
+Glacier National Park,Invertebrate,2
+Glacier National Park,Mammal,69
+Glacier National Park,Nonvascular Plant,404
+Glacier National Park,Reptile,4
+Glacier National Park,Slug/Snail,20
+Glacier National Park,Vascular Plant,1266
+Grand Canyon National Park,Amphibian,15
+Grand Canyon National Park,Bird,456
+Grand Canyon National Park,Fish,29
+Grand Canyon National Park,Insect,57
+Grand Canyon National Park,Invertebrate,1
+Grand Canyon National Park,Mammal,106
+Grand Canyon National Park,Reptile,76
+Grand Canyon National Park,Slug/Snail,2
+Grand Canyon National Park,Spider/Scorpion,142
+Grand Canyon National Park,Vascular Plant,1738
+Grand Teton National Park,Algae,1
+Grand Teton National Park,Amphibian,7
+Grand Teton National Park,Bird,266
+Grand Teton National Park,Crab/Lobster/Shrimp,1
+Grand Teton National Park,Fish,21
+Grand Teton National Park,Fungi,28
+Grand Teton National Park,Insect,154
+Grand Teton National Park,Invertebrate,5
+Grand Teton National Park,Mammal,74
+Grand Teton National Park,Reptile,5
+Grand Teton National Park,Slug/Snail,4
+Grand Teton National Park,Spider/Scorpion,1
+Grand Teton National Park,Vascular Plant,1463
+Great Basin National Park,Amphibian,22
+Great Basin National Park,Bird,330
+Great Basin National Park,Crab/Lobster/Shrimp,6
+Great Basin National Park,Fish,21
+Great Basin National Park,Fungi,15
+Great Basin National Park,Insect,456
+Great Basin National Park,Invertebrate,29
+Great Basin National Park,Mammal,103
+Great Basin National Park,Nonvascular Plant,16
+Great Basin National Park,Reptile,58
+Great Basin National Park,Slug/Snail,30
+Great Basin National Park,Spider/Scorpion,18
+Great Basin National Park,Vascular Plant,1549
+Great Sand Dunes National Park and Preserve,Amphibian,6
+Great Sand Dunes National Park and Preserve,Bird,240
+Great Sand Dunes National Park and Preserve,Fish,6
+Great Sand Dunes National Park and Preserve,Insect,1
+Great Sand Dunes National Park and Preserve,Mammal,68
+Great Sand Dunes National Park and Preserve,Nonvascular Plant,1
+Great Sand Dunes National Park and Preserve,Reptile,8
+Great Sand Dunes National Park and Preserve,Vascular Plant,622
+Great Smoky Mountains National Park,Amphibian,61
+Great Smoky Mountains National Park,Bird,272
+Great Smoky Mountains National Park,Crab/Lobster/Shrimp,10
+Great Smoky Mountains National Park,Fish,107
+Great Smoky Mountains National Park,Fungi,632
+Great Smoky Mountains National Park,Insect,2414
+Great Smoky Mountains National Park,Invertebrate,84
+Great Smoky Mountains National Park,Mammal,94
+Great Smoky Mountains National Park,Nonvascular Plant,528
+Great Smoky Mountains National Park,Reptile,51
+Great Smoky Mountains National Park,Slug/Snail,92
+Great Smoky Mountains National Park,Spider/Scorpion,104
+Great Smoky Mountains National Park,Vascular Plant,2174
+Guadalupe Mountains National Park,Amphibian,12
+Guadalupe Mountains National Park,Bird,272
+Guadalupe Mountains National Park,Crab/Lobster/Shrimp,5
+Guadalupe Mountains National Park,Fish,3
+Guadalupe Mountains National Park,Fungi,66
+Guadalupe Mountains National Park,Insect,115
+Guadalupe Mountains National Park,Invertebrate,7
+Guadalupe Mountains National Park,Mammal,76
+Guadalupe Mountains National Park,Nonvascular Plant,5
+Guadalupe Mountains National Park,Reptile,56
+Guadalupe Mountains National Park,Slug/Snail,58
+Guadalupe Mountains National Park,Spider/Scorpion,2
+Guadalupe Mountains National Park,Vascular Plant,1069
+Haleakala National Park,Amphibian,3
+Haleakala National Park,Bird,44
+Haleakala National Park,Crab/Lobster/Shrimp,18
+Haleakala National Park,Fish,6
+Haleakala National Park,Fungi,66
+Haleakala National Park,Insect,1061
+Haleakala National Park,Invertebrate,37
+Haleakala National Park,Mammal,15
+Haleakala National Park,Nonvascular Plant,227
+Haleakala National Park,Reptile,10
+Haleakala National Park,Slug/Snail,47
+Haleakala National Park,Spider/Scorpion,46
+Haleakala National Park,Vascular Plant,1000
+Hawaii Volcanoes National Park,Amphibian,4
+Hawaii Volcanoes National Park,Bird,78
+Hawaii Volcanoes National Park,Crab/Lobster/Shrimp,56
+Hawaii Volcanoes National Park,Fish,4
+Hawaii Volcanoes National Park,Fungi,7
+Hawaii Volcanoes National Park,Insect,1429
+Hawaii Volcanoes National Park,Invertebrate,173
+Hawaii Volcanoes National Park,Mammal,15
+Hawaii Volcanoes National Park,Nonvascular Plant,135
+Hawaii Volcanoes National Park,Reptile,13
+Hawaii Volcanoes National Park,Slug/Snail,71
+Hawaii Volcanoes National Park,Spider/Scorpion,101
+Hawaii Volcanoes National Park,Vascular Plant,1212
+Hot Springs National Park,Algae,24
+Hot Springs National Park,Amphibian,27
+Hot Springs National Park,Bird,387
+Hot Springs National Park,Crab/Lobster/Shrimp,9
+Hot Springs National Park,Fish,90
+Hot Springs National Park,Insect,15
+Hot Springs National Park,Invertebrate,22
+Hot Springs National Park,Mammal,52
+Hot Springs National Park,Nonvascular Plant,18
+Hot Springs National Park,Reptile,52
+Hot Springs National Park,Slug/Snail,2
+Hot Springs National Park,Vascular Plant,1252
+Isle Royale National Park,Amphibian,13
+Isle Royale National Park,Bird,261
+Isle Royale National Park,Crab/Lobster/Shrimp,14
+Isle Royale National Park,Fish,63
+Isle Royale National Park,Invertebrate,21
+Isle Royale National Park,Mammal,26
+Isle Royale National Park,Nonvascular Plant,1
+Isle Royale National Park,Reptile,5
+Isle Royale National Park,Vascular Plant,993
+Joshua Tree National Park,Algae,5
+Joshua Tree National Park,Amphibian,5
+Joshua Tree National Park,Bird,301
+Joshua Tree National Park,Fish,1
+Joshua Tree National Park,Fungi,38
+Joshua Tree National Park,Insect,342
+Joshua Tree National Park,Invertebrate,10
+Joshua Tree National Park,Mammal,67
+Joshua Tree National Park,Nonvascular Plant,6
+Joshua Tree National Park,Reptile,52
+Joshua Tree National Park,Spider/Scorpion,153
+Joshua Tree National Park,Vascular Plant,1314
+Katmai National Park and Preserve,Amphibian,1
+Katmai National Park and Preserve,Bird,222
+Katmai National Park and Preserve,Crab/Lobster/Shrimp,4
+Katmai National Park and Preserve,Fish,44
+Katmai National Park and Preserve,Fungi,105
+Katmai National Park and Preserve,Insect,7
+Katmai National Park and Preserve,Invertebrate,29
+Katmai National Park and Preserve,Mammal,54
+Katmai National Park and Preserve,Nonvascular Plant,20
+Katmai National Park and Preserve,Slug/Snail,7
+Katmai National Park and Preserve,Vascular Plant,732
+Kenai Fjords National Park,Amphibian,1
+Kenai Fjords National Park,Bird,235
+Kenai Fjords National Park,Fish,42
+Kenai Fjords National Park,Fungi,2
+Kenai Fjords National Park,Insect,3
+Kenai Fjords National Park,Invertebrate,42
+Kenai Fjords National Park,Mammal,55
+Kenai Fjords National Park,Slug/Snail,4
+Kenai Fjords National Park,Vascular Plant,673
+Kobuk Valley National Park,Amphibian,1
+Kobuk Valley National Park,Bird,125
+Kobuk Valley National Park,Fish,26
+Kobuk Valley National Park,Fungi,333
+Kobuk Valley National Park,Mammal,38
+Kobuk Valley National Park,Nonvascular Plant,26
+Kobuk Valley National Park,Vascular Plant,476
+Lake Clark National Park and Preserve,Amphibian,1
+Lake Clark National Park and Preserve,Bird,193
+Lake Clark National Park and Preserve,Crab/Lobster/Shrimp,1
+Lake Clark National Park and Preserve,Fish,55
+Lake Clark National Park and Preserve,Fungi,220
+Lake Clark National Park and Preserve,Insect,3
+Lake Clark National Park and Preserve,Invertebrate,6
+Lake Clark National Park and Preserve,Mammal,50
+Lake Clark National Park and Preserve,Nonvascular Plant,281
+Lake Clark National Park and Preserve,Vascular Plant,1197
+Lassen Volcanic National Park,Algae,2
+Lassen Volcanic National Park,Amphibian,17
+Lassen Volcanic National Park,Bird,245
+Lassen Volcanic National Park,Crab/Lobster/Shrimp,15
+Lassen Volcanic National Park,Fish,20
+Lassen Volcanic National Park,Fungi,51
+Lassen Volcanic National Park,Insect,95
+Lassen Volcanic National Park,Invertebrate,18
+Lassen Volcanic National Park,Mammal,100
+Lassen Volcanic National Park,Nonvascular Plant,160
+Lassen Volcanic National Park,Reptile,22
+Lassen Volcanic National Park,Slug/Snail,6
+Lassen Volcanic National Park,Vascular Plant,1046
+Mammoth Cave National Park,Amphibian,33
+Mammoth Cave National Park,Bird,210
+Mammoth Cave National Park,Crab/Lobster/Shrimp,1
+Mammoth Cave National Park,Fish,122
+Mammoth Cave National Park,Insect,270
+Mammoth Cave National Park,Invertebrate,54
+Mammoth Cave National Park,Mammal,56
+Mammoth Cave National Park,Nonvascular Plant,1
+Mammoth Cave National Park,Reptile,42
+Mammoth Cave National Park,Spider/Scorpion,2
+Mammoth Cave National Park,Vascular Plant,1708
+Mesa Verde National Park,Amphibian,8
+Mesa Verde National Park,Bird,237
+Mesa Verde National Park,Mammal,86
+Mesa Verde National Park,Reptile,21
+Mesa Verde National Park,Vascular Plant,891
+Mount Rainier National Park,Amphibian,16
+Mount Rainier National Park,Bird,187
+Mount Rainier National Park,Fish,23
+Mount Rainier National Park,Fungi,31
+Mount Rainier National Park,Insect,47
+Mount Rainier National Park,Mammal,69
+Mount Rainier National Park,Nonvascular Plant,357
+Mount Rainier National Park,Reptile,5
+Mount Rainier National Park,Vascular Plant,1008
+North Cascades National Park,Amphibian,12
+North Cascades National Park,Bird,226
+North Cascades National Park,Fish,33
+North Cascades National Park,Fungi,539
+North Cascades National Park,Insect,559
+North Cascades National Park,Mammal,79
+North Cascades National Park,Nonvascular Plant,385
+North Cascades National Park,Reptile,10
+North Cascades National Park,Spider/Scorpion,42
+North Cascades National Park,Vascular Plant,1478
+Olympic National Park,Amphibian,16
+Olympic National Park,Bird,310
+Olympic National Park,Fish,97
+Olympic National Park,Insect,87
+Olympic National Park,Mammal,80
+Olympic National Park,Reptile,6
+Olympic National Park,Vascular Plant,1352
+Petrified Forest National Park,Amphibian,8
+Petrified Forest National Park,Bird,244
+Petrified Forest National Park,Fungi,1
+Petrified Forest National Park,Mammal,62
+Petrified Forest National Park,Nonvascular Plant,1
+Petrified Forest National Park,Reptile,21
+Petrified Forest National Park,Vascular Plant,516
+Pinnacles National Park,Amphibian,10
+Pinnacles National Park,Bird,170
+Pinnacles National Park,Crab/Lobster/Shrimp,8
+Pinnacles National Park,Fish,6
+Pinnacles National Park,Fungi,27
+Pinnacles National Park,Insect,323
+Pinnacles National Park,Invertebrate,31
+Pinnacles National Park,Mammal,60
+Pinnacles National Park,Reptile,29
+Pinnacles National Park,Slug/Snail,11
+Pinnacles National Park,Spider/Scorpion,10
+Pinnacles National Park,Vascular Plant,731
+Redwood National Park,Algae,111
+Redwood National Park,Amphibian,33
+Redwood National Park,Bird,501
+Redwood National Park,Crab/Lobster/Shrimp,122
+Redwood National Park,Fish,247
+Redwood National Park,Fungi,1363
+Redwood National Park,Insect,744
+Redwood National Park,Invertebrate,334
+Redwood National Park,Mammal,154
+Redwood National Park,Nonvascular Plant,251
+Redwood National Park,Reptile,39
+Redwood National Park,Slug/Snail,147
+Redwood National Park,Spider/Scorpion,7
+Redwood National Park,Vascular Plant,2257
+Rocky Mountain National Park,Algae,150
+Rocky Mountain National Park,Amphibian,5
+Rocky Mountain National Park,Bird,277
+Rocky Mountain National Park,Crab/Lobster/Shrimp,39
+Rocky Mountain National Park,Fish,12
+Rocky Mountain National Park,Fungi,306
+Rocky Mountain National Park,Insect,676
+Rocky Mountain National Park,Invertebrate,48
+Rocky Mountain National Park,Mammal,74
+Rocky Mountain National Park,Nonvascular Plant,416
+Rocky Mountain National Park,Reptile,3
+Rocky Mountain National Park,Slug/Snail,10
+Rocky Mountain National Park,Spider/Scorpion,22
+Rocky Mountain National Park,Vascular Plant,1114
+Saguaro National Park,Amphibian,10
+Saguaro National Park,Bird,246
+Saguaro National Park,Crab/Lobster/Shrimp,1
+Saguaro National Park,Fungi,2
+Saguaro National Park,Mammal,102
+Saguaro National Park,Reptile,62
+Saguaro National Park,Vascular Plant,1411
+Sequoia and Kings Canyon National Parks,Amphibian,13
+Sequoia and Kings Canyon National Parks,Bird,220
+Sequoia and Kings Canyon National Parks,Fish,19
+Sequoia and Kings Canyon National Parks,Mammal,89
+Sequoia and Kings Canyon National Parks,Reptile,24
+Sequoia and Kings Canyon National Parks,Vascular Plant,1630
+Shenandoah National Park,Amphibian,40
+Shenandoah National Park,Bird,268
+Shenandoah National Park,Crab/Lobster/Shrimp,3
+Shenandoah National Park,Fish,41
+Shenandoah National Park,Fungi,765
+Shenandoah National Park,Insect,318
+Shenandoah National Park,Invertebrate,2
+Shenandoah National Park,Mammal,63
+Shenandoah National Park,Nonvascular Plant,350
+Shenandoah National Park,Reptile,38
+Shenandoah National Park,Slug/Snail,2
+Shenandoah National Park,Spider/Scorpion,4
+Shenandoah National Park,Vascular Plant,2761
+Theodore Roosevelt National Park,Amphibian,8
+Theodore Roosevelt National Park,Bird,223
+Theodore Roosevelt National Park,Crab/Lobster/Shrimp,1
+Theodore Roosevelt National Park,Fish,32
+Theodore Roosevelt National Park,Fungi,1
+Theodore Roosevelt National Park,Insect,73
+Theodore Roosevelt National Park,Invertebrate,3
+Theodore Roosevelt National Park,Mammal,66
+Theodore Roosevelt National Park,Nonvascular Plant,61
+Theodore Roosevelt National Park,Reptile,13
+Theodore Roosevelt National Park,Slug/Snail,2
+Theodore Roosevelt National Park,Spider/Scorpion,2
+Theodore Roosevelt National Park,Vascular Plant,680
+Voyageurs National Park,Amphibian,15
+Voyageurs National Park,Bird,238
+Voyageurs National Park,Fish,58
+Voyageurs National Park,Fungi,3
+Voyageurs National Park,Insect,33
+Voyageurs National Park,Invertebrate,7
+Voyageurs National Park,Mammal,63
+Voyageurs National Park,Nonvascular Plant,11
+Voyageurs National Park,Reptile,6
+Voyageurs National Park,Vascular Plant,1019
+Wind Cave National Park,Amphibian,7
+Wind Cave National Park,Bird,235
+Wind Cave National Park,Fish,8
+Wind Cave National Park,Fungi,43
+Wind Cave National Park,Insect,105
+Wind Cave National Park,Mammal,89
+Wind Cave National Park,Reptile,12
+Wind Cave National Park,Slug/Snail,25
+Wind Cave National Park,Vascular Plant,871
+Wrangell - St Elias National Park and Preserve,Amphibian,2
+Wrangell - St Elias National Park and Preserve,Bird,211
+Wrangell - St Elias National Park and Preserve,Fish,93
+Wrangell - St Elias National Park and Preserve,Insect,58
+Wrangell - St Elias National Park and Preserve,Invertebrate,4
+Wrangell - St Elias National Park and Preserve,Mammal,62
+Wrangell - St Elias National Park and Preserve,Nonvascular Plant,7
+Wrangell - St Elias National Park and Preserve,Reptile,1
+Wrangell - St Elias National Park and Preserve,Slug/Snail,1
+Wrangell - St Elias National Park and Preserve,Vascular Plant,1357
+Yellowstone National Park,Algae,204
+Yellowstone National Park,Amphibian,9
+Yellowstone National Park,Bird,330
+Yellowstone National Park,Crab/Lobster/Shrimp,63
+Yellowstone National Park,Fish,19
+Yellowstone National Park,Fungi,11
+Yellowstone National Park,Insect,1628
+Yellowstone National Park,Invertebrate,78
+Yellowstone National Park,Mammal,78
+Yellowstone National Park,Nonvascular Plant,15
+Yellowstone National Park,Reptile,9
+Yellowstone National Park,Slug/Snail,59
+Yellowstone National Park,Spider/Scorpion,43
+Yellowstone National Park,Vascular Plant,1420
+Yosemite National Park,Amphibian,15
+Yosemite National Park,Bird,270
+Yosemite National Park,Fish,10
+Yosemite National Park,Mammal,88
+Yosemite National Park,Reptile,22
+Yosemite National Park,Vascular Plant,1683
+Zion National Park,Amphibian,7
+Zion National Park,Bird,301
+Zion National Park,Fish,15
+Zion National Park,Mammal,80
+Zion National Park,Reptile,30
+Zion National Park,Vascular Plant,1363
