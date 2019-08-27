@@ -35,7 +35,7 @@ def index():
 
 @app.route("/parks")
 def parks():
-    return parks_json
+  	return jsonify(jsons)
 
 @app.route("/species")
 def species():

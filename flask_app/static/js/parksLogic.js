@@ -81,6 +81,38 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		onEachFeature: onEachFeature
 	}).addTo(map);
 
+//GOOGLE CHARTS STUFF
+//I'm putting this up here to preload the charts
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+//Declaring the function up here so that it's hoisted. I don't think this is necessary 
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Park Name', 'Mammals', 'Bugs', 'Peppers', 'Rogers'],
+    ['<b>Arcadia</b>', 1000, 400, 200, 222],
+    ['Columia', 1170, 460, 250, 222],
+    ['Paraguay', 660, 1120, 300,333],
+    ['Hati', 1030, 540, 350,333]
+  ]);
+
+  var options = {
+    chart: {
+      title: 'Animal Categories',
+      subtitle: 'The number of species per category in PARKNAME',
+    },
+    bars: 'vertical', // Required for Material Bar Charts.
+    hAxis: {format: 'decimal'},
+    height: 400, //MAKE THIS THE MAXIMUM NUMBER OF SPECIES FOR THE CHARTS 
+    colors: ['#1b9e77', '#d95f02', '#7570b3', 'yellow']
+  };
+
+  var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+  chart.draw(data, google.charts.Bar.convertOptions(options));
+
+}
+
 
 
   
@@ -113,14 +145,22 @@ console.log("About to run D3.json")
   // };
 
 //Call d3.json on the parks to get the API
-d3_call = d3.json('/parks');
+park_api_call = d3.json('/parks');
+
+
 
 //See giant comment blog above for explanation.
 setTimeout(function(){
-    d3_call.then(function(parks){
+    park_api_call.then(function(data){
+    	//We have to do this because the API return as a string
+    	let parks = eval(data["parks"])
+
+    	// let cats = eval(data["cat"])
     	//Loop through all the parks and get their geo-coordinates
   		for (let i = 0; i < parks.length; i++) {
-		    var location = [parks[i].latitude, parks[i].longitude]
+  			let park = parks[i]
+
+		    let location = [park.latitude, park.longitude]
 
 		    //Make popup appear a bit higher 
 		    // var myIcon = L.divIcon({ popupAnchor: [0, -30] });
@@ -137,7 +177,7 @@ setTimeout(function(){
 		    //Create markers on map based on the coordinates
 		    marker = L.marker(location, {icon:greenIcon})
 		    marker.addTo(map);
-		    let park = parks[i]
+		    //The popup box when you mouseover
 		    marker.on('mouseover', function(e) {
 			  var popup = L.popup({ offset:[0,-20]})
 			   .setLatLng(e.latlng) 
@@ -145,36 +185,12 @@ setTimeout(function(){
 			   	'</b><br/> Latitude: ' + park.latitude + '</b><br/> Longitude: ' + park.longitude)
 			   .openOn(map);
 					});
+		    //The thing that updates the chart
+		    marker.on('click', function(e) {
+		    	console.log("clicked")
+		    	console.log(e)
+		    });
   }
     })
-}, 500);
+}, 1500);
 
-//Plot Data
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Park Name', 'Mammals', 'Bugs', 'Peppers', 'Rogers'],
-          ['<b>Arcadia</b>', 1000, 400, 200, 222],
-          ['Columia', 1170, 460, 250, 222],
-          ['Paraguay', 660, 1120, 300,333],
-          ['Hati', 1030, 540, 350,333]
-        ]);
-
-        var options = {
-          chart: {
-            title: 'Animal Categories',
-            subtitle: 'The number of species per category in PARKNAME',
-          },
-          bars: 'vertical', // Required for Material Bar Charts.
-          hAxis: {format: 'decimal'},
-          height: 400, //MAKE THIS THE MAXIMUM NUMBER OF SPECIES FOR THE CHARTS 
-          colors: ['#1b9e77', '#d95f02', '#7570b3', 'yellow']
-        };
-
-        var chart = new google.charts.Bar(document.getElementById('chart_div'));
-
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-
-      }
