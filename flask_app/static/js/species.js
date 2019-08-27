@@ -17,9 +17,9 @@ var svg = d3.select("body").append("svg")
  var queryURL = '/species'
 
 // Perform a GET request to the query URL to get the data
-d3.json(queryUrl, function (data) {
-    console.log(data)
-});
+// d3.json(queryUrl, function (data) {
+//     console.log(data)
+// });
 
     
 // d3.json("flare.json", function (error, flare) {

@@ -81,7 +81,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		onEachFeature: onEachFeature
 	}).addTo(map);
 
-	map.attributionControl.addAttribution('Population data &copy; <a href="http://census.gov/">US Census Bureau</a>');
 
 
   
@@ -150,18 +149,32 @@ setTimeout(function(){
     })
 }, 500);
 
+//Plot Data
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
 
-//PLOTLY DATA
-let data = [
-  {
-    x: ['giraffes', 'orangutans', 'monkeys'],
-    y: [20, 14, 23],
-    type: 'bar'
-  }
-];
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Park Name', 'Mammals', 'Bugs', 'Peppers', 'Rogers'],
+          ['<b>Arcadia</b>', 1000, 400, 200, 222],
+          ['Columia', 1170, 460, 250, 222],
+          ['Paraguay', 660, 1120, 300,333],
+          ['Hati', 1030, 540, 350,333]
+        ]);
 
-let layout = {
-  title: "Park Name"
-};
+        var options = {
+          chart: {
+            title: 'Animal Categories',
+            subtitle: 'The number of species per category in PARKNAME',
+          },
+          bars: 'vertical', // Required for Material Bar Charts.
+          hAxis: {format: 'decimal'},
+          height: 400, //MAKE THIS THE MAXIMUM NUMBER OF SPECIES FOR THE CHARTS 
+          colors: ['#1b9e77', '#d95f02', '#7570b3', 'yellow']
+        };
 
-Plotly.newPlot('chart', data, layout);
+        var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+
+      }
