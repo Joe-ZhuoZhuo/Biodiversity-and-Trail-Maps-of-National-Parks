@@ -16,7 +16,8 @@
 // // Getting json data to generate tree
 //  var queryURL = '/species'
 
-// // Perform a GET request to the query URL to get the data
+// Perform a GET request to the query URL to get the data
+
 // d3.json(queryUrl, function (data) {
 //     console.log(data)
 // });
