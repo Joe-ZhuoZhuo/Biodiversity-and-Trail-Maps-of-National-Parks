@@ -20,11 +20,12 @@ def serges_func():
 	df_pr_sp = pd.merge(df_pr, df_sp)
 	df_pr_sp.drop(['park_code','order','family'], axis=1, inplace=True)
 	df_group_by = df_pr_sp.groupby(['park_name', 'category'])[['category']].count()
+	df_group_by.columns=['category_count']
 
 
 	parks_json = df_pr.to_json(orient='records')
 	species_json = df_sp.to_json(orient='records')
-	cat_json = df_group_by.to_json(orient='table')
+	cat_json = df_group_by.to_json(orient='records')
 	return {"parks":parks_json,"species":species_json, "cat":cat_json}
 
 
