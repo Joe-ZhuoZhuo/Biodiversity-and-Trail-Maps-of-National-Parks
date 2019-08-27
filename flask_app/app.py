@@ -22,7 +22,7 @@ from serge import serges_func
 jsons = serges_func()
 parks_json = jsons["parks"]
 species_json = jsons["species"]
-
+cat_json = jsons["cat"]
 
 @app.route("/")
 def index():
@@ -42,6 +42,10 @@ def species():
     # RL - This is from python_to_parent_child_JSON
     return jsonify(species_data)
 #     return species_json
+
+@app.route("/cat")
+def cat():
+     return cat_json
 
 
 if __name__ == "__main__":
