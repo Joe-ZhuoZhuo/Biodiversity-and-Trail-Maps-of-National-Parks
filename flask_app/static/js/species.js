@@ -1,22 +1,23 @@
-var margin = { top: 30, right: 20, bottom: 30, left: 20 },
-    width = 960,
-    barHeight = 20,
-    barWidth = (width - margin.left - margin.right) * 0.8;
-var i = 0,
-    duration = 400,
-    root;
-var diagonal = d3.linkHorizontal()
-    .x(function (d) { return d.y; })
-    .y(function (d) { return d.x; });
-var svg = d3.select("body").append("svg")
-    .attr("width", width) // + margin.left + margin.right)
-    .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+// var margin = { top: 30, right: 20, bottom: 30, left: 20 },
+//     width = 960,
+//     barHeight = 20,
+//     barWidth = (width - margin.left - margin.right) * 0.8;
+// var i = 0,
+//     duration = 400,
+//     root;
+// var diagonal = d3.linkHorizontal()
+//     .x(function (d) { return d.y; })
+//     .y(function (d) { return d.x; });
+// var svg = d3.select("body").append("svg")
+//     .attr("width", width) // + margin.left + margin.right)
+//     .append("g")
+//     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// Getting json data to generate tree
- var queryURL = '/species'
+// // Getting json data to generate tree
+//  var queryURL = '/species'
 
 // Perform a GET request to the query URL to get the data
+
 // d3.json(queryUrl, function (data) {
 //     console.log(data)
 // });
