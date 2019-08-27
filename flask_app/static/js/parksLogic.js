@@ -152,7 +152,7 @@ setTimeout(function(){
 
 
 //PLOTLY DATA
-var data = [
+let data = [
   {
     x: ['giraffes', 'orangutans', 'monkeys'],
     y: [20, 14, 23],
@@ -160,4 +160,8 @@ var data = [
   }
 ];
 
-Plotly.newPlot('chart', data);
+let layout = {
+  title: "Park Name"
+};
+
+Plotly.newPlot('chart', data, layout);
