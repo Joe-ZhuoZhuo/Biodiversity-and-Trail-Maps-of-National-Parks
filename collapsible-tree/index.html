@@ -27,6 +27,11 @@ path.link {
     </style>
 </head>
 <body>
+  <header>
+      <button onclick="expandAll()">Expand All</button>
+      <button onclick="collapseAll()">Collapse All</button>
+    </header>
+
     <div id="chart"></div>
 
 <script type="text/javascript">
@@ -35,7 +40,7 @@ var w = 960,
     h = 1500,
     i = 0,
     barHeight = 20,
-    barWidth = w * .8,
+    barWidth = w * .3,
     duration = 400,
     root;
 
@@ -65,6 +70,35 @@ d3.json("flare_2.json", function(json) {
   moveChildren(json);
   update(root = json);
 });
+
+function expand(d){
+    var children = (d.children)?d.children:d._children;
+    if (d._children) {
+        d.children = d._children;
+        d._children = null;
+    }
+    if(children)
+      children.forEach(expand);
+}
+
+function collapse(d) {
+  if (d.children) {
+    d._children = d.children;
+    d._children.forEach(collapse);
+    d.children = null;
+  }
+}
+
+function expandAll(){
+    expand(root);
+    update(root);
+}
+
+function collapseAll(){
+    root.children.forEach(collapse);
+    collapse(root);
+    update(root);
+}
 
 function update(source) {
 
