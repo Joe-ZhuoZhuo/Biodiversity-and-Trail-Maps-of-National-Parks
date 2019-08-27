@@ -6,3 +6,42 @@
 
 .info h4 { margin: 0 0 5px; color: #777; }
 
+.title-text {
+	font: 60px Arial, Helvetica, sans-serif;
+	color: whitesmoke
+}
+
+#header-text {
+	font: 20px Arial, Helvetica, sans-serif;
+}
+
+/* .card-image {
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+     -o-filter: blur(5px);
+     -ms-filter: blur(5px);
+     filter: blur(5px);
+     z-index: -1;
+} */
+
+.node rect {
+  cursor: pointer;
+  fill: #fff;
+  fill-opacity: .5;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+
+path.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}

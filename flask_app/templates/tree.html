@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>National Parks Biodiversity</title>
+
+    <!-- Tree JS -->
     <script type="text/javascript" src="https://mbostock.github.com/d3/d3.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+      <!-- Leaflet CSS & JS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/CSS/style.css">
+
     <style type="text/css">
 
-.node rect {
+/* .node rect {
   cursor: pointer;
   fill: #fff;
   fill-opacity: .5;
@@ -22,17 +42,83 @@ path.link {
   fill: none;
   stroke: #9ecae1;
   stroke-width: 1.5px;
-}
+} */
 
     </style>
 </head>
 <body>
-  <header>
-      <button onclick="expandAll()">Expand All</button>
-      <button onclick="collapseAll()">Collapse All</button>
-    </header>
+  <div class="container my-4">
+    <!-- Jumbotron -->
+    <div class="card card-image"
+      style="background-image: url(https://afar-production.imgix.net/uploads/images/afar_post_headers/images/wNnk8EyLsU/original_Grand_20Canyon.jpg?fit=crop&w=1600&h=700&lossless=true&auto=compress,format,enhance)">
+      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+        <div class="py-5">
+    
+          <!-- Content -->
+          <h1 class="title-text" font size="7"> The National Parks of the United States</h1>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5" id='header-text'>The term biodiversity encompasses life at all its levels,
+            from ecosystems to species to genes. To study biodiversity is
+            to study the complete web of life that makes Earth the only known planet upon which the human species can live.
+          </p>
+          <a class="btn peach-gradient"><i class="fa fa-clone left"></i> Click on the parks below for more information</a>
+    
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-light bg-light">
+      <a href="/" class="navbar-right logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/US-NationalParkService-Logo.svg"
+          style="width:5%"></a>
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tree">Species Tree</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              National Parks
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <!-- When a state Park is selected it'll populate the chart below -->
+              <a class="dropdown-item" href="#">Populate with park names</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+ 
+    
+    <div class="container my-4" class="explore">
+      <h3>Click on the tree below to explore the various park species</h3>
+    </div>
+    <div class="container my-4">
+        <header>
+          <button onclick="expandAll()">Expand All</button>
+          <button onclick="collapseAll()">Collapse All</button>
+        </header>
+    </div>
 
-    <div id="chart"></div>
+  <!-- THE TREE -->
+    <div class="container my-4" id="chart"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
 
@@ -64,7 +150,8 @@ function moveChildren(node) {
     }
 }
 
-d3.json("../resources/flare_2.json", function(json) {
+d3.json("/species", function(json) {
+  console.log(json)
   json.x0 = 0;
   json.y0 = 0;
   moveChildren(json);
@@ -203,7 +290,7 @@ function click(d) {
 function color(d) {
   return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
 }
-
-    </script>
+</script>
+   
   </body>
 </html>
