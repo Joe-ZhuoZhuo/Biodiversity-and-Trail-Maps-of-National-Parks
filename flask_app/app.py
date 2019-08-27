@@ -32,10 +32,6 @@ def index():
 def build_tree():
     return render_template("tree.html")
 
-# RL - This route is no longer needed
-# @app.route("/roger")
-# def roger():
-#     return jsonify(rogers_dic)
 @app.route("/all")
 def all_jsons():
   	return jsonify(jsons_from_function)
@@ -53,6 +49,7 @@ def species():
 @app.route("/cat")
 def cat():
      return cat_json
+
 
 
 if __name__ == "__main__":
