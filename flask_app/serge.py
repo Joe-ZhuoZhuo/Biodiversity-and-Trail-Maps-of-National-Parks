@@ -24,7 +24,7 @@ def serges_func():
 
 	parks_json = df_pr.to_json(orient='records')
 	species_json = df_sp.to_json(orient='records')
-	cat_json = df_group_by.to_json(orient='index')
+	cat_json = df_group_by.to_json(orient='table')
 	return {"parks":parks_json,"species":species_json, "cat":cat_json}
 
 
