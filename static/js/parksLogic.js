@@ -17,7 +17,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>US State Parks</h4>' +  
+		this._div.innerHTML = '<h4>National State Parks</h4>' +  
 		(props ? '<b>' + props.name : '');
 	};
 
